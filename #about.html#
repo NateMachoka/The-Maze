@@ -27,30 +27,52 @@
         <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
         <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
-    <style>
-        /* Add space above the "About Me" section */
-        .about-me-section {
-            padding-top: 100px; /* Adjust as needed */
-        }
-
-        /* Style for the image in a circular format */
-        .about-me-section .profile-pic {
-            border-radius: 50%;
-            width: 150px; /* Set the desired size */
-            height: 150px;
-            object-fit: cover;
-        }
-    </style>
 </head>
 <body>
+    <!-- Header section -->
+    <header class="header-section">
+        <div class="header-warp">
+            <div class="header-social d-flex justify-content-end">
+                <p>Follow us:</p>
+                <a href="#"><i class="fa fa-pinterest"></i></a>
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-dribbble"></i></a>
+                <a href="#"><i class="fa fa-behance"></i></a>
+            </div>
+            <div class="header-bar-warp d-flex">
+                <!-- site logo -->
+                <a href="home.html" class="site-logo">
+                    <img src="./img/logo.png" alt="">
+                </a>
+                <nav class="top-nav-area w-100">
+                    <div class="user-panel">
+                        <a href="">Login</a> / <a href="">Register</a>
+                    </div>
+                    <!-- Menu -->
+                    <ul class="main-menu primary-menu">
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="games.html">Games</a>
+                            <ul class="sub-menu">
+                                <li><a href="game-single.html">Game Single</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="review.html">Reviews</a></li>
+                        <li><a href="about.html">About Me</a></li> <!-- Ensure consistency with navigation -->
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <!-- Header section end -->
+
     <!-- About Me section -->
     <section class="about-me-section">
         <div class="container">
             <h2>About Me</h2>
             <div class="row">
-                <div class="col-md-4 text-center">
-                    <!-- Optional circle for the profile picture -->
-                    <img src="img/about-me.jpg" alt="Your Picture" class="profile-pic">
+                <div class="col-md-4">
+                    <img src="img/about-me.jpg" alt="About Me" class="img-fluid">
                 </div>
                 <div class="col-md-8">
                     <p>Welcome to Bima Creations, where gaming meets creativity. I’m Nathan Machoka, the founder and editor of this gaming website. With a passion for gaming, a love of ancient civilizations, and a desire to explore my creative potential, I started Bima Creations to share my love for games and provide an update about the first game I've ever created.</p>
@@ -62,7 +84,7 @@
     </section>
     <!-- About Me section end -->
 
-  <!-- Footer section -->
+    <!-- Footer section -->
     <footer class="footer-section">
         <div class="container">
             <div class="footer-left-pic">
@@ -71,13 +93,14 @@
             <div class="footer-right-pic">
                 <img src="img/footer-right-pic.png" alt="">
             </div>
-            <!-- Removed the footer logo and replaced with text -->
-            <p class="footer-logo-text" style="text-align: center; font-size: 18px;">The Maze Game</p>
+            <a href="#" class="footer-logo">
+                <img src="./img/logo.png" alt="">
+            </a>
             <ul class="main-menu footer-menu">
                 <li><a href="home.html">Home</a></li>
                 <li><a href="games.html">Games</a></li>
                 <li><a href="review.html">Reviews</a></li>
-                <li><a href="about.html">About Me</a></li>
+                <li><a href="about.html">About Me</a></li> <!-- Ensure consistency with navigation -->
             </ul>
             <div class="footer-social d-flex justify-content-center">
                 <a href="#"><i class="fa fa-pinterest"></i></a>
